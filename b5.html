@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bài 5: viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất
+    let IntegerArr = [-125,50,17]
+    let min = minInteger(IntegerArr)
+    function minInteger(arr) {
+        let min = arr[0];
+        for(let i = 1; i < arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    document.write("Số nhỏ nhất trong 3 số nguyên là " + min)
+</script>
+</body>
+</html>
